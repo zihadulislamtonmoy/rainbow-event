@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rainbow Event Management</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h1>Rainbow Event Management</h1>
+  <div>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="overlay">
+        <h1>Make Your Event Colorful</h1>
+    <p>Wedding | Gaye Holud | Birthday | Decoration</p>
+    <p>Contact Number: 01980085589</p> <br>
+    <a href="tel:01980085589" class="btn">Call Now</a>
+  
+  </div>
+ 
+</section>
+
+<!-- Services -->
+<section id="services" class="services">
+  <h2>Our Services</h2>
+
+  <div class="cards">
+    <div class="card">Wedding Decoration</div>
+    <div class="card">Gaye Holud Decoration</div>
+    <div class="card">Birthday Decoration</div>
+    <div class="card">Stage & Lighting</div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="gallery">
+  <h2>Packages</h2>
+
+  <div class="gallery-grid">
+    <img src="images/img1.jpg" onclick="openLightbox(this)">
+    <img src="images/img2.jpg" onclick="openLightbox(this)">
+    <img src="images/img3.jpg" onclick="openLightbox(this)">
+    <img src="images/img4.jpg" onclick="openLightbox(this)">
+    <img src="images/img5.jpg" onclick="openLightbox(this)">
+    <img src="images/img6.jpg" onclick="openLightbox(this)">
+    <img src="images/img7.jpg" onclick="openLightbox(this)">
+    <img src="images/img8.jpg" onclick="openLightbox(this)">
+    <img src="images/img9.jpg" onclick="openLightbox(this)">
+    <img src="images/img10.jpg" onclick="openLightbox(this)">
+    <img src="images/img11.jpg" onclick="openLightbox(this)">
+    <img src="images/img12.jpg" onclick="openLightbox(this)">
+    <img src="images/img13.jpg" onclick="openLightbox(this)">
+    <img src="images/img14.jpg" onclick="openLightbox(this)">
+    <img src="images/img15.jpg" onclick="openLightbox(this)">
+    
+  </div>
+</section>
+
+<div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+</div>
+
+<script>
+    function openLightbox(img){
+        document.getElementById('lightbox').style.display='flex';
+        document.getElementById('lightbox-img').src=img.src;
+
+    }
+
+    function closeLightbox(){
+        document.getElementById('lightbox').style.display='none';
+    }
+</script>
+
+
+<!-- Contact -->
+<section id="contact" class="contact">
+  <h2>Contact Us</h2> <br>
+  <p>📞 01980085589 | 01796435030</p>
+  <p>📍 Akua Bypass, Mymensingh</p>
+  
+</section>
+
+<footer>
+© 2026 Rainbow Event Management
+</footer>
+
+</body>
+</html>
+
